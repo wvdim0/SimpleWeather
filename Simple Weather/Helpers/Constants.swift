@@ -15,7 +15,7 @@ enum Constants {
     enum URL {
         static let owmWeatherURL = "https://api.openweathermap.org/data/2.5/weather"
         static let owmOneCallURL = "https://api.openweathermap.org/data/2.5/onecall"
-        static let imageURL = "https://bit.ly/3BUmp90"
+        static let imageURL = "https://i.postimg.cc/CLXfqnnM/wvdim0.jpg"
     }
 
     enum ErrorMesages {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ViewPresenterProtocol: class {
+protocol ViewPresenterProtocol: AnyObject {
     func getWeather(for requestType: RequestType)
     func getWeather(for placeType: PlaceType)
     func displayMapViewController()

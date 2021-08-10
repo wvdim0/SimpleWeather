@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-protocol MapViewProtocol: class {
+protocol MapViewProtocol: AnyObject {
     func startLoadingAnimation()
     func stopLoadingAnimation()
     func displayLocation(_ location: Location)

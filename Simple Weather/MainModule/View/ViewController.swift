@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ViewProtocol: class {
+protocol ViewProtocol: AnyObject {
     var isLoadingAnimationInProcess: Bool { get }
 
     func updateInterface(with resultWeather: ResultWeather)
@@ -269,13 +269,7 @@ final class ViewController: UIViewController, ViewProtocol {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let resultWeather = resultWeather {
-            let numberOfRowsInSection = resultWeather.daily.dates.count + 1
-
-            return numberOfRowsInSection
-        } else {
-            return 2
-        }
+        return (resultWeather?.daily.dates.count ?? 1) + 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

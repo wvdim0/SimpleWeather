@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol FavoritesViewProtocol: class {
+protocol FavoritesViewProtocol: AnyObject {
     func startLoadingAnimation()
     func stopLoadingAnimation()
     func displayErrorAlert(with title: String)

@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol SettingsViewProtocol: class {
+protocol SettingsViewProtocol: AnyObject {
     func updateImageView(with image: UIImage)
 }
 
